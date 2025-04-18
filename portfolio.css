@@ -1,0 +1,324 @@
+.portfolio-container	{
+	<style>
+			
+			nav     {
+				background: #008080; 
+				padding: 10px;
+				}
+
+			a       { 
+				color: #008080; 
+				margin: 10px; 
+				text-decoration: none; 
+				font-size: 18px; 
+				font-weight: bold;
+				}
+
+			a:hover {
+				color:red;
+				}
+
+			.container {
+            			text-align: center;
+            			padding: 30px;
+        			}
+
+        		.profile-pic img {
+            			border-radius: 50%;
+            			width: 220px;
+            			height: 220px;
+            			border: 4px solid #006666;
+            			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        			}
+
+        		.story {
+            			width: 60%;
+            			margin: 30px auto;
+            			padding: 25px;
+            			background: #1c2541;
+            			border-radius: 12px;
+            			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            			font-size: 18px;
+            			line-height: 1.6;
+        			}
+
+			.story p{
+				color:white;
+				}
+
+        		footer {
+            			text-align: center;
+            			padding: 10px;
+            			background:#008080;
+            			color: white;
+	            		font-size: 14px;
+        			}
+
+			marquee {
+				color:#005f5f;
+				}
+
+			#background {
+  				background-image: url(background.jpeg);
+  				background-position: left top;
+  				background-repeat: repeat;
+  				padding: 15px;
+				}
+			
+		</style>
+}
+
+
+.gallery-container {
+	<style>
+			nav     {
+				background: #008080; 
+				padding: 10px;
+				}
+
+			a       { 
+				color: #008080; 
+				margin: 10px; 
+				text-decoration: none; 
+				font-size: 18px; 
+				font-weight: bold;
+
+				}
+
+			p	{
+				color:white;
+				}
+
+			a:hover {
+				color:red;
+				}
+
+			footer { 
+				background: #008080; 
+				color: white;
+				padding: 4px; 
+				position:fixed;
+				bottom: 0; 
+				width: 100%; 
+				}
+			
+			marquee {
+				color:#005f5f;
+				}
+
+			#background {
+  				background-image: url(background.jpeg);
+  				background-position: left top;
+  				background-repeat: repeat;
+  				padding: 15px;
+				}
+
+			#background p{
+				color:#00eaff;
+					}
+
+			.story {
+            			width: 60%;
+            			margin: 30px auto;
+            			padding: 1px;
+            			background: white;
+            			border-radius: 12px;
+            			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            			font-size: 12px;
+            			line-height: 1.6;
+        			}
+		</style>
+}
+
+.profile-container {
+	<style>
+			nav     {
+				background: #008080; 
+				padding: 10px;
+				}
+
+			a       { 
+				color: #008080; 
+				margin: 10px; 
+				text-decoration: none; 
+				font-size: 18px; 
+				font-weight: bold;
+
+				
+				}
+
+			a:hover {
+				color:red;
+				}
+
+			.story {
+            			width: 60%;
+            			margin: 30px auto;
+            			padding: 25px;
+            			background: #1c2541;
+            			border-radius: 12px;
+            			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            			font-size: 18px;
+            			line-height: 1.6;
+        			}
+
+			.story h3 {
+				color: #00eaff;
+				}
+
+			.story ul{
+				color:white;
+				}
+
+			footer { 
+				background: #008080; 
+				color: white;
+				padding: 4px; 
+				bottom: 0; 
+				width: 100%; 
+				}
+
+			marquee {
+				color:#005f5f;
+				}
+
+			#background {
+  				background-image: url(background.jpeg);
+  				background-position: left top;
+  				background-repeat: repeat;
+  				padding: 15px;
+				}
+
+			
+		</style>
+}
+
+.contact-container {
+	<style>
+			nav     {
+				background: #008080; 
+				padding: 10px;
+				}
+
+			nav a       { 
+				color: #008080; 
+				margin: 10px; 
+				text-decoration: none; 
+				font-size: 18px; 
+				font-weight: bold;
+
+				
+				}
+
+			a:hover {
+				color:red;
+				}
+
+			.contact-section {
+    				text-align: center;
+    				padding: 10px 10%;
+				}
+
+			.contact-section .title {
+    				font-size: 2rem;
+    				margin-bottom: 20px;
+				color:white;
+				}
+
+			.contact-section .title span {
+    				color: #00eaff;
+				}
+
+			.contact-container {
+    				display: flex;
+    				justify-content: space-between;
+    				align-items: center;
+    				background-color: #1c2541;
+    				padding: 30px;
+    				border-radius: 10px;
+				}
+
+			.contact-info {
+   	 			width: 45%;
+    				text-align: left;
+				}
+
+			.contact-info h3 {
+    				font-size: 1.5rem;
+    				margin-bottom: 15px;
+				color:white;
+				}
+
+			.contact-details p {
+    				font-size: 1rem;
+    				margin: 10px 0;
+				color:gray;
+				}
+
+			.contact-details i {
+    				color: #00eaff;
+    				margin-right: 10px;
+				}
+
+			/* Right Contact Form */
+			.contact-form {
+    				width: 50%;
+				}
+
+			.contact-form form {
+    				display: flex;
+    				flex-direction: column;
+				}
+
+			.contact-form input,
+			.contact-form textarea {
+    				width: 100%;
+    				padding: 10px;
+    				margin-bottom: 10px;
+    				border: none;
+    				border-radius: 5px;
+    				background-color: #33415c;
+    				color: #fff;
+    				font-size: 1rem;
+				}
+
+			.contact-form textarea {
+    				height: 120px;
+				}
+
+			.contact-form button {
+    				background-color: #00eaff;
+    				color: #000;
+    				padding: 12px;
+    				font-size: 1.2rem;
+    				border: none;
+    				border-radius: 5px;
+    				cursor: pointer;
+    				transition: 0.3s;
+				}
+
+			.contact-form button:hover {
+    				background-color: #00b3cc;
+				}
+
+			footer { 
+				background: #008080; 
+				color: white;
+				padding: 4px; 
+				bottom: 0; 
+				width: 100%; 
+				}
+
+			marquee {
+				color:#005f5f;
+				}
+
+			#background {
+  				background-image: url(background.jpeg);
+  				background-position: left top;
+  				background-repeat: repeat;
+  				padding: 15px;
+				}
+			
+		</style>
+}

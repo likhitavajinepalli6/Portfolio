@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">		
+	<title>Contact</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="C:\Users\likhi\OneDrive\Documents\html\portfolio source code\portfolio.css"> 
+
+	</head>
+	<body class="contact-container">
+		<marquee speed>
+			<h1>Welcome to my portfolio<h1>
+		</marquee>
+		<hr/>
+		<nav align="right">
+			<a href="portfolio.html">Home</a>
+			<a href="profile.html">Profile</a>	
+			<a href="gallery.html">Gallery</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+		<div id="background">
+		<section class="contact-section">
+        <h2 class="title">Contact <span>Me</span></h2>
+
+        <div class="contact-container">
+            <!-- Left Contact Info -->
+            <div class="contact-info">
+                <h3 align="center">Let's Work Together</h3>
+                <div class="contact-details" align="center">
+              	<p><i class="fas fa-envelope"></i> 
+                	<a href="www.gmail.com" style="color: gray; text-decoration: none;">likhita@gmail.com</a>
+		</p>
+                <p><i class="fas fa-phone"></i> 
+			+91 0123456789
+		</p>
+                </div>
+            </div>
+
+            <!-- Right Contact Form -->
+            <div class="contact-form">
+                <form method="POST" id="contactForm">
+                    <input type="text" id="name" placeholder="Enter Your Name" required>
+                    <input type="email" id="email" placeholder="Enter Your Email" required>
+                    <input type="number" id="phone" placeholder="Enter Your phone number" required>
+                    <textarea id="message" placeholder="Enter Your Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+		</p>
+		</section>
+		<footer align="center">
+			<p>&copy; 2025 Likhita. All rights reserved.</p>
+    		</footer>
+
+
+		<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("contactForm").addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent form submission
+                if (validateForm()) {
+                    alert("Form submitted successfully!");
+                    this.submit(); // Submit the form after validation
+                }
+            });
+        });
+
+        function validateForm() {
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let phone = document.getElementById("phone").value.trim();
+            let message = document.getElementById("message").value.trim();
+
+            let namePattern = /^[A-Za-z\s]+$/; // Only alphabets and spaces
+            let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            let phonePattern = /^\d{10}$/;
+
+            if (!namePattern.test(name)) {
+                alert("Name should only contain alphabets and spaces.");
+                return false;
+            }
+
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address (e.g., name@example.com).");
+                return false;
+            }
+
+            if (!phonePattern.test(phone)) {
+                alert("Mobile number should contain exactly 10 digits.");
+                return false;
+            }
+
+            if (message.length === 0) {
+                alert("Message field cannot be empty.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+	</body>
+</html>
